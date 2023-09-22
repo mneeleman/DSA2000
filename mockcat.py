@@ -284,6 +284,9 @@ def _fluxperbeam_(f):
     nbeams = np.where(gal_size > beam_size, gal_size / beam_size, 1)
     return fhi / np.sqrt(nbeams)   # changed to sqrt(n) to partially account for integrated quantity which we care for.
 
+#################################
+#### BELOW THIS LINE THE CODE HAS NOT BEEN UPDATED FOR THE NEW SIMS, SO THESE NEXT PIECES OF CODE WILL LIKELY FAIL AND WILL NEED TO BE UPDATED.
+#################################
 
 def plot_himf():
     for field in ['deep', 'pulsar', 'wide']:
